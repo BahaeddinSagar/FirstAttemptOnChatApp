@@ -7,13 +7,36 @@
     android:layout_height="match_parent"
     tools:context=".ChatRoomActivity"
     android:gravity="center"
+    android:orientation="vertical"
     >
 
-    <TextView
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/ChatList"
+        >
+
+
+    </ListView>
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/RoomInformation"
-        android:textSize="30sp"
-        />
+        >
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/edittext1"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text = "Send"
+            android:onClick="Send"
+            />
+
+
+    </LinearLayout>
 
 </LinearLayout>
